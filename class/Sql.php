@@ -16,7 +16,8 @@
         {
             foreach ($parameters as $key => $value) {
 
-                $this>setParam($key, $value);
+                $this->setParam($statement, $key, $value);
+
             }
         }
 
@@ -43,7 +44,3 @@
             return $stmt->fetchAll(PDO::FETCH_ASSOC);
         }
     }
-
-
-
-?>
