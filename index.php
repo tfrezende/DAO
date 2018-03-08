@@ -26,10 +26,19 @@
     //$aluno->insert();
     //echo $aluno;
 
+
+    //Alterar um usuário:
+    //$usuario = new Usuario();
+    //$usuario->loadbyID(10);
+    //$usuario->update('professor', 'novasenha');
+    //echo $usuario;
+
     $usuario = new Usuario();
 
-    $usuario->loadbyID(10);
+    $usuario->loadbyID(7);
 
-    $usuario->update('professor', 'novasenha');
+    echo $usuario;
+
+    $usuario->delete();
 
     echo $usuario;
